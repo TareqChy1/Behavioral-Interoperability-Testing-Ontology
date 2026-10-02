@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use the Behavioral Interoperability Testing Ontology (BITO), please cite it using the metadata provided here."
+
+title: "Behavioral Interoperability Testing Ontology (BITO)"
+
+abstract: "The Behavioral Interoperability Testing Ontology (BITO) provides an ontology-based representation layer for behavioral interoperability testing. It represents expected scenario behavior, observed execution evidence, behavioral constraints, trace evidence, validation results, and interoperability verdicts. BITO complements domain ontologies with testing-specific concepts required to represent behavioral interoperability between interacting systems."
+
+version: "1.0.0"
+date-released: "2026-10-03"
+doi: "10.5281/zenodo.23111388"
+license: CC-BY-4.0
+
+repository-code: "https://github.com/TareqChy1/Behavioral-Interoperability-Testing-Ontology"
+url: "https://w3id.org/bito"
+
+keywords:
+  - behavioral interoperability
+  - behavioral interoperability testing
+  - semantic interoperability
+  - conformance testing
+  - ontology
+  - ontology engineering
+  - semantic web
+  - OWL
+  - knowledge representation
+  - linked data
+
+authors:
+  - family-names: "Chy"
+    given-names: "Tareq Md Rabiul Hossain"
+    orcid: "https://orcid.org/0000-0002-8306-9091"
+    affiliation: "Trialog, Paris, France"
+
+  - family-names: "Bouter"
+    given-names: "Cornelis"
+    orcid: "https://orcid.org/0000-0002-5448-0543"
+    affiliation: "TNO – Netherlands Organisation for Applied Scientific Research, The Hague, The Netherlands"
+
+  - family-names: "Daniele"
+    given-names: "Laura"
+    orcid: "https://orcid.org/0000-0002-9267-7160"
+    affiliation: "TNO – Netherlands Organisation for Applied Scientific Research, The Hague, The Netherlands"
