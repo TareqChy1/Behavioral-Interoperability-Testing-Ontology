@@ -20,13 +20,13 @@ The Behavioral Interoperability Testing Ontology (BITO) provides an ontology-bas
 
 ## Ontology
 
-The BITO ontology files are available in the [`ontology/`](ontology/) directory.
+The BITO ontology files are available in the [`ontology/`](ontology/Behavioral_Interoperability_Testing_Ontology.ttl) directory.
 
 ---
 
 ## Ontology Development
 
-BITO was developed following the **[Linked Open Terms (LOT)](https://lot.linkeddata.es/)** methodology. Competency questions, available in [`competency-questions/`](competency-questions/), were used to specify the ontology requirements. Existing ontologies and vocabularies were reviewed for reuse, and BITO-specific classes and properties were introduced where suitable reusable terms were not identified.
+BITO was developed following the **[Linked Open Terms (LOT)](https://lot.linkeddata.es/)** methodology. Competency questions, available in [`competency-questions/`](competency-questions/CQs.txt), were used to specify the ontology requirements. Existing ontologies and vocabularies were reviewed for reuse, and BITO-specific classes and properties were introduced where suitable reusable terms were not identified.
 
 ---
 
@@ -38,19 +38,19 @@ BITO reuses terms from **[SAREF](https://saref.etsi.org/core/v4.1.1/)**, **[SARE
 
 ## Conceptual Diagram
 
-The BITO conceptual diagram is available in [`conceptual-diagram/`](conceptual-diagram/). It provides a visual representation of the principal concepts and relationships in BITO and shows how BITO-specific concepts relate to terms reused from external ontologies.
+The BITO conceptual diagram is available in [`conceptual-diagram/`](conceptual-diagram/Conceptual%20Diagram%20(BITO).png). It provides a visual representation of the principal concepts and relationships in BITO and shows how BITO-specific concepts relate to terms reused from external ontologies.
 
 ---
 
 ## Competency Questions
 
-The competency questions used to specify BITO's ontology requirements are available in [`competency-questions/`](competency-questions/). They express the questions that should be answerable using the ontology, covering expected scenario behavior and observed execution evidence.
+The competency questions used to specify BITO's ontology requirements are available in [`competency-questions/`](competency-questions/CQs.txt). They express the questions that should be answerable using the ontology, covering expected scenario behavior and observed execution evidence.
 
 ---
 
 ## SPARQL and Description Logic (DL) Queries
 
-The SPARQL and Description Logic (DL) queries used during ontology evaluation are available in [`sparql-dl-queries/`](sparql-dl-queries/). SPARQL queries were used to assess whether the competency questions could be answered over a representative test graph, while selected DL queries were used to check expected inferred relationships and class memberships within the ontology.
+The SPARQL and Description Logic (DL) queries used during ontology evaluation are available in [`sparql-dl-queries/`](sparql-dl-queries/sparql%20queries/SPARQL_Queries.rq). SPARQL queries were used to assess whether the competency questions could be answered over a representative test graph, while selected DL queries were used to check expected inferred relationships and class memberships within the ontology.
 
 ---
 
