@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/bito#"
      xml:base="https://w3id.org/bito"
-     xmlns:bito="https://w3id.org/bito#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bito="https://w3id.org/bito#"
      xmlns:core="https://saref.etsi.org/core/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -18,13 +18,14 @@
         <terms:creator xml:lang="en">Laura Daniele (TNO)</terms:creator>
         <terms:creator xml:lang="en">Tareq Md Rabiul Hossain Chy (Trialog)</terms:creator>
         <terms:description xml:lang="en">Ontology for representing use cases, scenarios, expected behavior, observed execution evidence, constraints, validation results, and verdicts for ontology-driven behavioral validation.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-03</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</terms:modified>
         <terms:title xml:lang="en">Behavioral Interoperability Testing Ontology (BITO)</terms:title>
-        <vann:preferredNamespacePrefix xml:lang="en">bito</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>bito</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/bito#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">It contains the behavioral vocabulary, selected reused ontology terms, and instances.</rdfs:comment>
-        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -59,6 +60,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 

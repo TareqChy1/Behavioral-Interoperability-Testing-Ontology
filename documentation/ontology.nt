@@ -5,13 +5,14 @@
 <https://w3id.org/bito> <http://purl.org/dc/terms/creator> "Laura Daniele (TNO)"@en .
 <https://w3id.org/bito> <http://purl.org/dc/terms/creator> "Tareq Md Rabiul Hossain Chy (Trialog)"@en .
 <https://w3id.org/bito> <http://purl.org/dc/terms/description> "Ontology for representing use cases, scenarios, expected behavior, observed execution evidence, constraints, validation results, and verdicts for ontology-driven behavioral validation."@en .
+<https://w3id.org/bito> <http://purl.org/dc/terms/issued> "2026-10-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bito> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/bito> <http://purl.org/dc/terms/modified> "2026-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bito> <http://purl.org/dc/terms/modified> "2026-10-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bito> <http://purl.org/dc/terms/title> "Behavioral Interoperability Testing Ontology (BITO)"@en .
-<https://w3id.org/bito> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bito"@en .
+<https://w3id.org/bito> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bito" .
 <https://w3id.org/bito> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/bito#" .
 <https://w3id.org/bito> <http://www.w3.org/2000/01/rdf-schema#comment> "It contains the behavioral vocabulary, selected reused ontology terms, and instances."@en .
-<https://w3id.org/bito> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+<https://w3id.org/bito> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 # 
 # 
 # #################################################################
@@ -29,6 +30,9 @@
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

@@ -17,12 +17,13 @@
     <owl:Ontology rdf:about="https://w3id.org/bito">
         <owl:versionIRI rdf:resource="https://w3id.org/bito/1.0.0"/>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-20</dcterms:created>
+        <dcterms:creator xml:lang="en">Tareq Md Rabiul Hossain Chy (Trialog)</dcterms:creator>
         <dcterms:creator xml:lang="en">Cornelis Bouter (TNO)</dcterms:creator>
         <dcterms:creator xml:lang="en">Laura Daniele (TNO)</dcterms:creator>
-        <dcterms:creator xml:lang="en">Tareq Md Rabiul Hossain Chy (Trialog)</dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for representing use cases, scenarios, expected behavior, observed execution evidence, constraints, validation results, and verdicts for ontology-driven behavioral validation.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:modified>2026-06-03</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:issued>
         <dcterms:title xml:lang="en">Behavioral Interoperability Testing Ontology (BITO)</dcterms:title>
         <vann:preferredNamespacePrefix xml:lang="en">bito</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/bito#</vann:preferredNamespaceUri>

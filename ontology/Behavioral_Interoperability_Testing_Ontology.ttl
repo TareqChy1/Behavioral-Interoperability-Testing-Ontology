@@ -17,12 +17,13 @@
 <https://w3id.org/bito> rdf:type owl:Ontology ;
                         owl:versionIRI <https://w3id.org/bito/1.0.0> ;
                         dcterms:created "2026-05-20"^^xsd:date ;
-                        dcterms:creator "Cornelis Bouter (TNO)"@en ,
-                                        "Laura Daniele (TNO)"@en ,
-                                        "Tareq Md Rabiul Hossain Chy (Trialog)"@en ;
+                        dcterms:creator "Tareq Md Rabiul Hossain Chy (Trialog)"@en ,
+                                        "Cornelis Bouter (TNO)"@en ,
+                                        "Laura Daniele (TNO)"@en ;
                         dcterms:description "Ontology for representing use cases, scenarios, expected behavior, observed execution evidence, constraints, validation results, and verdicts for ontology-driven behavioral validation."@en ;
                         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                        dcterms:modified "2026-06-03"^^xsd:date ;
+                        dcterms:modified "2026-10-03"^^xsd:date ;
+                        dcterms:issued "2026-10-03"^^xsd:date ;
                         dcterms:title "Behavioral Interoperability Testing Ontology (BITO)"@en ;
                         vann:preferredNamespacePrefix "bito" ;
                         vann:preferredNamespaceUri "https://w3id.org/bito#" ;

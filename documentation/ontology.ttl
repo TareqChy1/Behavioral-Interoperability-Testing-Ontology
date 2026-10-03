@@ -7,19 +7,20 @@
 @base <https://w3id.org/bito#> .
 
 <https://w3id.org/bito> rdf:type owl:Ontology ;
-                        owl:versionIRI <https://w3id.org/bito/1.0.0> ;
-                        <http://purl.org/dc/terms/created> "2026-05-20"^^xsd:date ;
-                        <http://purl.org/dc/terms/creator> "Cornelis Bouter (TNO)"@en ,
-                                                           "Laura Daniele (TNO)"@en ,
-                                                           "Tareq Md Rabiul Hossain Chy (Trialog)"@en ;
-                        <http://purl.org/dc/terms/description> "Ontology for representing use cases, scenarios, expected behavior, observed execution evidence, constraints, validation results, and verdicts for ontology-driven behavioral validation."@en ;
-                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                        <http://purl.org/dc/terms/modified> "2026-06-03"^^xsd:date ;
-                        <http://purl.org/dc/terms/title> "Behavioral Interoperability Testing Ontology (BITO)"@en ;
-                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "bito"@en ;
-                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/bito#" ;
-                        rdfs:comment "It contains the behavioral vocabulary, selected reused ontology terms, and instances."@en ;
-                        owl:versionInfo "1.0.0"@en .
+                         owl:versionIRI <https://w3id.org/bito/1.0.0> ;
+                         <http://purl.org/dc/terms/created> "2026-05-20"^^xsd:date ;
+                         <http://purl.org/dc/terms/creator> "Cornelis Bouter (TNO)"@en ,
+                                                            "Laura Daniele (TNO)"@en ,
+                                                            "Tareq Md Rabiul Hossain Chy (Trialog)"@en ;
+                         <http://purl.org/dc/terms/description> "Ontology for representing use cases, scenarios, expected behavior, observed execution evidence, constraints, validation results, and verdicts for ontology-driven behavioral validation."@en ;
+                         <http://purl.org/dc/terms/issued> "2026-10-03"^^xsd:date ;
+                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/terms/modified> "2026-10-03"^^xsd:date ;
+                         <http://purl.org/dc/terms/title> "Behavioral Interoperability Testing Ontology (BITO)"@en ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "bito" ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/bito#" ;
+                         rdfs:comment "It contains the behavioral vocabulary, selected reused ontology terms, and instances."@en ;
+                         owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -35,6 +36,10 @@
 
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -1723,610 +1728,610 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/bito/example/flexible-start#AlternativesGroup_1
 <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> rdf:type owl:NamedIndividual ,
-                                                                           <https://saref.etsi.org/saref4ener/AlternativesGroup> ;
-                                                                  <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ,
-                                                                                                           <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                                  <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerProfile_000000000001> ;
-                                                                  <https://saref.etsi.org/core/hasIdentifier> 1 ;
-                                                                  rdfs:label "Alternatives group 1"@en .
+                                                                            <https://saref.etsi.org/saref4ener/AlternativesGroup> ;
+                                                                   <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ,
+                                                                                                            <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                   <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerProfile_000000000001> ;
+                                                                   <https://saref.etsi.org/core/hasIdentifier> 1 ;
+                                                                   rdfs:label "Alternatives group 1"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#CCM
 <https://w3id.org/bito/example/flexible-start#CCM> rdf:type owl:NamedIndividual ,
-                                                           <http://www.w3.org/ns/prov#Agent> ;
-                                                  rdfs:comment "Customer Connectivity Manager used as interacting actor system in the Flexible Start validation instances."@en ;
-                                                  rdfs:label "CCM"@en .
+                                                            <http://www.w3.org/ns/prov#Agent> ;
+                                                   rdfs:comment "Customer Connectivity Manager used as interacting actor system in the Flexible Start validation instances."@en ;
+                                                   rdfs:label "CCM"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStatus
 <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStatus> rdf:type owl:NamedIndividual ,
-                                                                                :BehavioralConstraint ,
-                                                                                :OutcomeConstraint ;
-                                                                       :appliesTo <https://w3id.org/bito/example/flexible-start#Outcome_S1_ValidPlan> ;
-                                                                       rdfs:comment "Scenario 1 observed plan status is valid."@en ;
-                                                                       rdfs:label "S1 plan status constraint"@en .
+                                                                                 :BehavioralConstraint ,
+                                                                                 :OutcomeConstraint ;
+                                                                        :appliesTo <https://w3id.org/bito/example/flexible-start#Outcome_S1_ValidPlan> ;
+                                                                        rdfs:comment "Scenario 1 observed plan status is valid."@en ;
+                                                                        rdfs:label "S1 plan status constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStructure
 <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStructure> rdf:type owl:NamedIndividual ,
-                                                                                   :BehavioralConstraint ,
-                                                                                   :StateConstraint ;
-                                                                          :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S1_PlanAvailable> ;
-                                                                          rdfs:comment "Scenario 1 plan contains the expected alternatives group and power sequences."@en ;
-                                                                          rdfs:label "S1 plan structure constraint"@en .
+                                                                                    :BehavioralConstraint ,
+                                                                                    :StateConstraint ;
+                                                                           :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S1_PlanAvailable> ;
+                                                                           rdfs:comment "Scenario 1 plan contains the expected alternatives group and power sequences."@en ;
+                                                                           rdfs:label "S1 plan structure constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S2_RequestAccepted
 <https://w3id.org/bito/example/flexible-start#Constraint_S2_RequestAccepted> rdf:type owl:NamedIndividual ,
-                                                                                     :BehavioralConstraint ,
-                                                                                     :TriggerConstraint ;
-                                                                            :appliesTo <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> ;
-                                                                            rdfs:comment "Scenario 2 shift request is accepted."@en ;
-                                                                            rdfs:label "S2 request accepted constraint"@en .
+                                                                                      :BehavioralConstraint ,
+                                                                                      :TriggerConstraint ;
+                                                                             :appliesTo <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> ;
+                                                                             rdfs:comment "Scenario 2 shift request is accepted."@en ;
+                                                                             rdfs:label "S2 request accepted constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S2_RunCompleted
 <https://w3id.org/bito/example/flexible-start#Constraint_S2_RunCompleted> rdf:type owl:NamedIndividual ,
-                                                                                  :BehavioralConstraint ,
-                                                                                  :OutcomeConstraint ;
-                                                                         :appliesTo <https://w3id.org/bito/example/flexible-start#Outcome_S2_PreferredSequenceShifted> ;
-                                                                         rdfs:comment "Scenario 2 observed run status is completed."@en ;
-                                                                         rdfs:label "S2 run completed constraint"@en .
+                                                                                   :BehavioralConstraint ,
+                                                                                   :OutcomeConstraint ;
+                                                                          :appliesTo <https://w3id.org/bito/example/flexible-start#Outcome_S2_PreferredSequenceShifted> ;
+                                                                          rdfs:comment "Scenario 2 observed run status is completed."@en ;
+                                                                          rdfs:label "S2 run completed constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S2_StartTimeUpdated
 <https://w3id.org/bito/example/flexible-start#Constraint_S2_StartTimeUpdated> rdf:type owl:NamedIndividual ,
-                                                                                      :BehavioralConstraint ,
-                                                                                      :TimingConstraint ;
-                                                                             :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S2_PreferredSequenceShifted> ;
-                                                                             rdfs:comment "Scenario 2 preferred sequence start time is updated to the requested value."@en ;
-                                                                             rdfs:label "S2 start time updated constraint"@en .
+                                                                                       :BehavioralConstraint ,
+                                                                                       :TimingConstraint ;
+                                                                              :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S2_PreferredSequenceShifted> ;
+                                                                              rdfs:comment "Scenario 2 preferred sequence start time is updated to the requested value."@en ;
+                                                                              rdfs:label "S2 start time updated constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S3_FormerPreferredInactive
 <https://w3id.org/bito/example/flexible-start#Constraint_S3_FormerPreferredInactive> rdf:type owl:NamedIndividual ,
-                                                                                             :BehavioralConstraint ,
-                                                                                             :TransitionConstraint ;
-                                                                                    :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S3_FormerPreferredInactive> ;
-                                                                                    rdfs:comment "Scenario 3 former preferred sequence becomes inactive."@en ;
-                                                                                    rdfs:label "S3 former preferred inactive constraint"@en .
+                                                                                              :BehavioralConstraint ,
+                                                                                              :TransitionConstraint ;
+                                                                                     :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S3_FormerPreferredInactive> ;
+                                                                                     rdfs:comment "Scenario 3 former preferred sequence becomes inactive."@en ;
+                                                                                     rdfs:label "S3 former preferred inactive constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S3_RequestAccepted
 <https://w3id.org/bito/example/flexible-start#Constraint_S3_RequestAccepted> rdf:type owl:NamedIndividual ,
-                                                                                     :BehavioralConstraint ,
-                                                                                     :TriggerConstraint ;
-                                                                            :appliesTo <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> ;
-                                                                            rdfs:comment "Scenario 3 selection request is accepted."@en ;
-                                                                            rdfs:label "S3 request accepted constraint"@en .
+                                                                                      :BehavioralConstraint ,
+                                                                                      :TriggerConstraint ;
+                                                                             :appliesTo <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> ;
+                                                                             rdfs:comment "Scenario 3 selection request is accepted."@en ;
+                                                                             rdfs:label "S3 request accepted constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S3_RunCompleted
 <https://w3id.org/bito/example/flexible-start#Constraint_S3_RunCompleted> rdf:type owl:NamedIndividual ,
-                                                                                  :BehavioralConstraint ,
-                                                                                  :OutcomeConstraint ;
-                                                                         :appliesTo <https://w3id.org/bito/example/flexible-start#Outcome_S3_AlternativeSequenceSelected> ;
-                                                                         rdfs:comment "Scenario 3 observed run status is completed."@en ;
-                                                                         rdfs:label "S3 run completed constraint"@en .
+                                                                                   :BehavioralConstraint ,
+                                                                                   :OutcomeConstraint ;
+                                                                          :appliesTo <https://w3id.org/bito/example/flexible-start#Outcome_S3_AlternativeSequenceSelected> ;
+                                                                          rdfs:comment "Scenario 3 observed run status is completed."@en ;
+                                                                          rdfs:label "S3 run completed constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Constraint_S3_SelectedSequenceScheduled
 <https://w3id.org/bito/example/flexible-start#Constraint_S3_SelectedSequenceScheduled> rdf:type owl:NamedIndividual ,
-                                                                                               :BehavioralConstraint ,
-                                                                                               :TransitionConstraint ;
-                                                                                      :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S3_SelectedSequenceScheduled> ;
-                                                                                      rdfs:comment "Scenario 3 selected sequence becomes scheduled."@en ;
-                                                                                      rdfs:label "S3 selected sequence scheduled constraint"@en .
+                                                                                                :BehavioralConstraint ,
+                                                                                                :TransitionConstraint ;
+                                                                                       :appliesTo <https://w3id.org/bito/example/flexible-start#Transition_S3_SelectedSequenceScheduled> ;
+                                                                                       rdfs:comment "Scenario 3 selected sequence becomes scheduled."@en ;
+                                                                                       rdfs:label "S3 selected sequence scheduled constraint"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001
 <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> rdf:type owl:NamedIndividual ,
-                                                                               <https://saref.etsi.org/core/Appliance> ;
-                                                                      <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#PowerProfile_000000000001> ;
-                                                                      <https://saref.etsi.org/core/hasIdentifier> "000000000001" ;
-                                                                      :entityId 0 ;
-                                                                      :entityType "Dishwasher" ;
-                                                                      rdfs:label "Dishwasher 000000000001"@en .
+                                                                                <https://saref.etsi.org/core/Appliance> ;
+                                                                       <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#PowerProfile_000000000001> ;
+                                                                       <https://saref.etsi.org/core/hasIdentifier> "000000000001" ;
+                                                                       :entityId 0 ;
+                                                                       :entityType "Dishwasher" ;
+                                                                       rdfs:label "Dishwasher 000000000001"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Event_S1_PlanObservation
 <https://w3id.org/bito/example/flexible-start#Event_S1_PlanObservation> rdf:type owl:NamedIndividual ,
-                                                                                :ObservedEvent ;
-                                                                       :eventOrderIndex 1 ;
-                                                                       :interactionEndpoint "GET /v1/features/powerSequence" ;
-                                                                       :observedAt "2025-07-15T09:00:00+00:00"^^xsd:dateTime ;
-                                                                       :observedInteractionKind "plan observation" ;
-                                                                       rdfs:label "Scenario 1 plan observation"@en .
+                                                                                 :ObservedEvent ;
+                                                                        :eventOrderIndex 1 ;
+                                                                        :interactionEndpoint "GET /v1/features/powerSequence" ;
+                                                                        :observedAt "2025-07-15T09:00:00+00:00"^^xsd:dateTime ;
+                                                                        :observedInteractionKind "plan observation" ;
+                                                                        rdfs:label "Scenario 1 plan observation"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest
 <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> rdf:type owl:NamedIndividual ,
-                                                                             :ObservedEvent ;
-                                                                    :requestedPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                                    :acceptanceOutcome "accepted" ;
-                                                                    :acceptedAt "2025-07-15T09:30:02+00:00"^^xsd:dateTime ;
-                                                                    :eventOrderIndex 1 ;
-                                                                    :interactionEndpoint "POST /v1/usecaseInterfaces/flexibleStartForWhiteGoods/v1" ;
-                                                                    :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
-                                                                    :observedExecutionStart "2025-07-15T11:00:20+00:00"^^xsd:dateTime ;
-                                                                    :observedInteractionKind "preferred sequence shift request" ;
-                                                                    :observedPlanUpdatedAt "2025-07-15T09:30:03+00:00"^^xsd:dateTime ;
-                                                                    :requestTimestamp "2025-07-15T09:30:00+00:00"^^xsd:dateTime ;
-                                                                    :requestedStartTime "2025-07-15T11:00:00+00:00"^^xsd:dateTime ;
-                                                                    rdfs:label "Scenario 2 shift request"@en .
+                                                                              :ObservedEvent ;
+                                                                     :requestedPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                     :acceptanceOutcome "accepted" ;
+                                                                     :acceptedAt "2025-07-15T09:30:02+00:00"^^xsd:dateTime ;
+                                                                     :eventOrderIndex 1 ;
+                                                                     :interactionEndpoint "POST /v1/usecaseInterfaces/flexibleStartForWhiteGoods/v1" ;
+                                                                     :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
+                                                                     :observedExecutionStart "2025-07-15T11:00:20+00:00"^^xsd:dateTime ;
+                                                                     :observedInteractionKind "preferred sequence shift request" ;
+                                                                     :observedPlanUpdatedAt "2025-07-15T09:30:03+00:00"^^xsd:dateTime ;
+                                                                     :requestTimestamp "2025-07-15T09:30:00+00:00"^^xsd:dateTime ;
+                                                                     :requestedStartTime "2025-07-15T11:00:00+00:00"^^xsd:dateTime ;
+                                                                     rdfs:label "Scenario 2 shift request"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest
 <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> rdf:type owl:NamedIndividual ,
-                                                                              :ObservedEvent ;
-                                                                     :requestedPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                                     :acceptanceOutcome "accepted" ;
-                                                                     :acceptedAt "2025-07-15T10:45:02+00:00"^^xsd:dateTime ;
-                                                                     :eventOrderIndex 1 ;
-                                                                     :interactionEndpoint "POST /v1/usecaseInterfaces/flexibleStartForWhiteGoods/v1" ;
-                                                                     :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
-                                                                     :observedExecutionStart "2025-07-15T12:00:20+00:00"^^xsd:dateTime ;
-                                                                     :observedInteractionKind "alternative sequence selection request" ;
-                                                                     :observedPlanUpdatedAt "2025-07-15T10:45:04+00:00"^^xsd:dateTime ;
-                                                                     :requestTimestamp "2025-07-15T10:45:00+00:00"^^xsd:dateTime ;
-                                                                     :requestedStartTime "2025-07-15T12:00:00+00:00"^^xsd:dateTime ;
-                                                                     rdfs:label "Scenario 3 select request"@en .
+                                                                               :ObservedEvent ;
+                                                                      :requestedPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                      :acceptanceOutcome "accepted" ;
+                                                                      :acceptedAt "2025-07-15T10:45:02+00:00"^^xsd:dateTime ;
+                                                                      :eventOrderIndex 1 ;
+                                                                      :interactionEndpoint "POST /v1/usecaseInterfaces/flexibleStartForWhiteGoods/v1" ;
+                                                                      :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
+                                                                      :observedExecutionStart "2025-07-15T12:00:20+00:00"^^xsd:dateTime ;
+                                                                      :observedInteractionKind "alternative sequence selection request" ;
+                                                                      :observedPlanUpdatedAt "2025-07-15T10:45:04+00:00"^^xsd:dateTime ;
+                                                                      :requestTimestamp "2025-07-15T10:45:00+00:00"^^xsd:dateTime ;
+                                                                      :requestedStartTime "2025-07-15T12:00:00+00:00"^^xsd:dateTime ;
+                                                                      rdfs:label "Scenario 3 select request"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Execution_S1
 <https://w3id.org/bito/example/flexible-start#Execution_S1> rdf:type owl:NamedIndividual ,
-                                                                    :ObservedExecution ;
-                                                           :hasObservedEvent <https://w3id.org/bito/example/flexible-start#Event_S1_PlanObservation> ;
-                                                           :hasTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S1> ;
-                                                           :hasValidationResult <https://w3id.org/bito/example/flexible-start#ValidationResult_S1> ;
-                                                           rdfs:label "Scenario 1 observed execution"@en .
+                                                                     :ObservedExecution ;
+                                                            :hasObservedEvent <https://w3id.org/bito/example/flexible-start#Event_S1_PlanObservation> ;
+                                                            :hasTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S1> ;
+                                                            :hasValidationResult <https://w3id.org/bito/example/flexible-start#ValidationResult_S1> ;
+                                                            rdfs:label "Scenario 1 observed execution"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Execution_S2
 <https://w3id.org/bito/example/flexible-start#Execution_S2> rdf:type owl:NamedIndividual ,
-                                                                    :ObservedExecution ;
-                                                           :hasObservedEvent <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> ;
-                                                           :hasObservedStateChange <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S2_Sequence44Scheduled> ;
-                                                           :hasTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S2> ;
-                                                           :hasValidationResult <https://w3id.org/bito/example/flexible-start#ValidationResult_S2> ;
-                                                           :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
-                                                           :observedExecutionStart "2025-07-15T11:00:20+00:00"^^xsd:dateTime ;
-                                                           rdfs:label "Scenario 2 observed execution"@en .
+                                                                     :ObservedExecution ;
+                                                            :hasObservedEvent <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> ;
+                                                            :hasObservedStateChange <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S2_Sequence44Scheduled> ;
+                                                            :hasTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S2> ;
+                                                            :hasValidationResult <https://w3id.org/bito/example/flexible-start#ValidationResult_S2> ;
+                                                            :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
+                                                            :observedExecutionStart "2025-07-15T11:00:20+00:00"^^xsd:dateTime ;
+                                                            rdfs:label "Scenario 2 observed execution"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Execution_S3
 <https://w3id.org/bito/example/flexible-start#Execution_S3> rdf:type owl:NamedIndividual ,
-                                                                    :ObservedExecution ;
-                                                           :hasObservedEvent <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> ;
-                                                           :hasObservedStateChange <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence44Inactive> ,
-                                                                                   <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence45Scheduled> ;
-                                                           :hasTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S3> ;
-                                                           :hasValidationResult <https://w3id.org/bito/example/flexible-start#ValidationResult_S3> ;
-                                                           :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
-                                                           :observedExecutionStart "2025-07-15T12:00:20+00:00"^^xsd:dateTime ;
-                                                           rdfs:label "Scenario 3 observed execution"@en .
+                                                                     :ObservedExecution ;
+                                                            :hasObservedEvent <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> ;
+                                                            :hasObservedStateChange <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence44Inactive> ,
+                                                                                    <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence45Scheduled> ;
+                                                            :hasTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S3> ;
+                                                            :hasValidationResult <https://w3id.org/bito/example/flexible-start#ValidationResult_S3> ;
+                                                            :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
+                                                            :observedExecutionStart "2025-07-15T12:00:20+00:00"^^xsd:dateTime ;
+                                                            rdfs:label "Scenario 3 observed execution"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase
 <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> rdf:type owl:NamedIndividual ,
-                                                                            :UseCase ;
-                                                                   :hasScenario <https://w3id.org/bito/example/flexible-start#Scenario1> ,
-                                                                                <https://w3id.org/bito/example/flexible-start#Scenario2> ,
-                                                                                <https://w3id.org/bito/example/flexible-start#Scenario3> ;
-                                                                   :useCaseName "flexibleStartForWhiteGoods" ;
-                                                                   :useCaseVersion "1.0.0" ;
-                                                                   rdfs:comment "Example use case used for validating the behavioral ontology with Scenarios 1, 2, and 3."@en ;
-                                                                   rdfs:label "Flexible Start use case"@en .
+                                                                             :UseCase ;
+                                                                    :hasScenario <https://w3id.org/bito/example/flexible-start#Scenario1> ,
+                                                                                 <https://w3id.org/bito/example/flexible-start#Scenario2> ,
+                                                                                 <https://w3id.org/bito/example/flexible-start#Scenario3> ;
+                                                                    :useCaseName "flexibleStartForWhiteGoods" ;
+                                                                    :useCaseVersion "1.0.0" ;
+                                                                    rdfs:comment "Example use case used for validating the behavioral ontology with Scenarios 1, 2, and 3."@en ;
+                                                                    rdfs:label "Flexible Start use case"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#ObservedStateChange_S2_Sequence44Scheduled
 <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S2_Sequence44Scheduled> rdf:type owl:NamedIndividual ,
-                                                                                                  :ObservedStateChange ;
-                                                                                         :hasObservedSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                         :hasObservedTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                         :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                                                         rdfs:label "Scenario 2 sequence 44 remains scheduled"@en .
+                                                                                                   :ObservedStateChange ;
+                                                                                          :hasObservedSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                          :hasObservedTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                          :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                                          rdfs:label "Scenario 2 sequence 44 remains scheduled"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence44Inactive
 <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence44Inactive> rdf:type owl:NamedIndividual ,
-                                                                                                 :ObservedStateChange ;
-                                                                                        :hasObservedSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                        :hasObservedTargetState <https://saref.etsi.org/saref4ener/Inactive> ;
-                                                                                        :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                                                        rdfs:label "Scenario 3 sequence 44 becomes inactive"@en .
+                                                                                                  :ObservedStateChange ;
+                                                                                         :hasObservedSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                         :hasObservedTargetState <https://saref.etsi.org/saref4ener/Inactive> ;
+                                                                                         :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                                         rdfs:label "Scenario 3 sequence 44 becomes inactive"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence45Scheduled
 <https://w3id.org/bito/example/flexible-start#ObservedStateChange_S3_Sequence45Scheduled> rdf:type owl:NamedIndividual ,
-                                                                                                  :ObservedStateChange ;
-                                                                                         :hasObservedSourceState <https://saref.etsi.org/saref4ener/Inactive> ;
-                                                                                         :hasObservedTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                         :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                                                         rdfs:label "Scenario 3 sequence 45 becomes scheduled"@en .
+                                                                                                   :ObservedStateChange ;
+                                                                                          :hasObservedSourceState <https://saref.etsi.org/saref4ener/Inactive> ;
+                                                                                          :hasObservedTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                          :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                                          rdfs:label "Scenario 3 sequence 45 becomes scheduled"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Outcome_S1_ValidPlan
 <https://w3id.org/bito/example/flexible-start#Outcome_S1_ValidPlan> rdf:type owl:NamedIndividual ,
-                                                                            :ExpectedOperationalOutcome ;
-                                                                   rdfs:label "Scenario 1 valid plan outcome"@en .
+                                                                             :ExpectedOperationalOutcome ;
+                                                                    rdfs:label "Scenario 1 valid plan outcome"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Outcome_S2_PreferredSequenceShifted
 <https://w3id.org/bito/example/flexible-start#Outcome_S2_PreferredSequenceShifted> rdf:type owl:NamedIndividual ,
-                                                                                           :ExpectedOperationalOutcome ;
-                                                                                  rdfs:label "Scenario 2 preferred sequence shifted outcome"@en .
+                                                                                            :ExpectedOperationalOutcome ;
+                                                                                   rdfs:label "Scenario 2 preferred sequence shifted outcome"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Outcome_S3_AlternativeSequenceSelected
 <https://w3id.org/bito/example/flexible-start#Outcome_S3_AlternativeSequenceSelected> rdf:type owl:NamedIndividual ,
-                                                                                              :ExpectedOperationalOutcome ;
-                                                                                     rdfs:label "Scenario 3 alternative sequence selected outcome"@en .
+                                                                                               :ExpectedOperationalOutcome ;
+                                                                                      rdfs:label "Scenario 3 alternative sequence selected outcome"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#PowerProfile_000000000001
 <https://w3id.org/bito/example/flexible-start#PowerProfile_000000000001> rdf:type owl:NamedIndividual ,
-                                                                                 <https://saref.etsi.org/saref4ener/PowerProfile> ;
-                                                                        <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> ;
-                                                                        <https://saref.etsi.org/saref4ener/nodeRemoteControllable> "true"^^xsd:boolean ;
-                                                                        <https://saref.etsi.org/saref4ener/supportsReselection> "true"^^xsd:boolean ;
-                                                                        rdfs:label "Power profile 000000000001"@en .
+                                                                                  <https://saref.etsi.org/saref4ener/PowerProfile> ;
+                                                                         <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> ;
+                                                                         <https://saref.etsi.org/saref4ener/nodeRemoteControllable> "true"^^xsd:boolean ;
+                                                                         <https://saref.etsi.org/saref4ener/supportsReselection> "true"^^xsd:boolean ;
+                                                                         rdfs:label "Power profile 000000000001"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#PowerSequence_44
 <https://w3id.org/bito/example/flexible-start#PowerSequence_44> rdf:type owl:NamedIndividual ,
-                                                                        <https://saref.etsi.org/saref4ener/PowerSequence> ;
-                                                               <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#Slot_44_0> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_1> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_2> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_3> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_4> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_5> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_6> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_7> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_8> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_44_9> ;
-                                                               <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> ;
-                                                               <https://saref.etsi.org/core/hasIdentifier> 44 ;
-                                                               <https://saref.etsi.org/saref4ener/hasEarliestStartTime> "2025-07-15T08:00:00+00:00"^^xsd:dateTime ;
-                                                               <https://saref.etsi.org/saref4ener/hasLatestEndTime> "2025-07-15T14:30:00+00:00"^^xsd:dateTime ;
-                                                               <https://saref.etsi.org/saref4ener/isPausable> "false"^^xsd:boolean ;
-                                                               <https://saref.etsi.org/saref4ener/isStoppable> "false"^^xsd:boolean ;
-                                                               <https://saref.etsi.org/saref4ener/sequenceRemoteControllable> "true"^^xsd:boolean ;
-                                                               rdfs:label "Power sequence 44"@en .
+                                                                         <https://saref.etsi.org/saref4ener/PowerSequence> ;
+                                                                <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#Slot_44_0> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_1> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_2> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_3> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_4> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_5> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_6> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_7> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_8> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_44_9> ;
+                                                                <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> ;
+                                                                <https://saref.etsi.org/core/hasIdentifier> 44 ;
+                                                                <https://saref.etsi.org/saref4ener/hasEarliestStartTime> "2025-07-15T08:00:00+00:00"^^xsd:dateTime ;
+                                                                <https://saref.etsi.org/saref4ener/hasLatestEndTime> "2025-07-15T14:30:00+00:00"^^xsd:dateTime ;
+                                                                <https://saref.etsi.org/saref4ener/isPausable> "false"^^xsd:boolean ;
+                                                                <https://saref.etsi.org/saref4ener/isStoppable> "false"^^xsd:boolean ;
+                                                                <https://saref.etsi.org/saref4ener/sequenceRemoteControllable> "true"^^xsd:boolean ;
+                                                                rdfs:label "Power sequence 44"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#PowerSequence_45
 <https://w3id.org/bito/example/flexible-start#PowerSequence_45> rdf:type owl:NamedIndividual ,
-                                                                        <https://saref.etsi.org/saref4ener/PowerSequence> ;
-                                                               <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#Slot_45_0> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_45_1> ,
-                                                                                                        <https://w3id.org/bito/example/flexible-start#Slot_45_2> ;
-                                                               <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> ;
-                                                               <https://saref.etsi.org/core/hasIdentifier> 45 ;
-                                                               <https://saref.etsi.org/saref4ener/hasEarliestStartTime> "2025-07-15T08:00:00+00:00"^^xsd:dateTime ;
-                                                               <https://saref.etsi.org/saref4ener/hasLatestEndTime> "2025-07-15T14:30:00+00:00"^^xsd:dateTime ;
-                                                               <https://saref.etsi.org/saref4ener/isPausable> "false"^^xsd:boolean ;
-                                                               <https://saref.etsi.org/saref4ener/isStoppable> "false"^^xsd:boolean ;
-                                                               <https://saref.etsi.org/saref4ener/sequenceRemoteControllable> "true"^^xsd:boolean ;
-                                                               rdfs:label "Power sequence 45"@en .
+                                                                         <https://saref.etsi.org/saref4ener/PowerSequence> ;
+                                                                <https://saref.etsi.org/core/consistsOf> <https://w3id.org/bito/example/flexible-start#Slot_45_0> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_45_1> ,
+                                                                                                         <https://w3id.org/bito/example/flexible-start#Slot_45_2> ;
+                                                                <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#AlternativesGroup_1> ;
+                                                                <https://saref.etsi.org/core/hasIdentifier> 45 ;
+                                                                <https://saref.etsi.org/saref4ener/hasEarliestStartTime> "2025-07-15T08:00:00+00:00"^^xsd:dateTime ;
+                                                                <https://saref.etsi.org/saref4ener/hasLatestEndTime> "2025-07-15T14:30:00+00:00"^^xsd:dateTime ;
+                                                                <https://saref.etsi.org/saref4ener/isPausable> "false"^^xsd:boolean ;
+                                                                <https://saref.etsi.org/saref4ener/isStoppable> "false"^^xsd:boolean ;
+                                                                <https://saref.etsi.org/saref4ener/sequenceRemoteControllable> "true"^^xsd:boolean ;
+                                                                rdfs:label "Power sequence 45"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Scenario1
 <https://w3id.org/bito/example/flexible-start#Scenario1> rdf:type owl:NamedIndividual ,
-                                                                 :Scenario ;
-                                                        :hasBehavioralConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStatus> ,
-                                                                                 <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStructure> ;
-                                                        :hasExpectedOperationalOutcome <https://w3id.org/bito/example/flexible-start#Outcome_S1_ValidPlan> ;
-                                                        :hasExpectedStateTransition <https://w3id.org/bito/example/flexible-start#Transition_S1_PlanAvailable> ;
-                                                        :hasIUT <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> ;
-                                                        :hasInteractingActorSystem <https://w3id.org/bito/example/flexible-start#CCM> ;
-                                                        :hasObservedExecution <https://w3id.org/bito/example/flexible-start#Execution_S1> ;
-                                                        :hasTriggeringInteraction <https://w3id.org/bito/example/flexible-start#Event_S1_PlanObservation> ;
-                                                        :isScenarioOf <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> ;
-                                                        :realizedByUseCaseFunction <https://w3id.org/bito/example/flexible-start#UCF_Plan_With_Power_Sequences> ;
-                                                        :scenarioName "Announcement of plan" ;
-                                                        :scenarioNumber 1 ;
-                                                        rdfs:label "Scenario 1"@en .
+                                                                  :Scenario ;
+                                                         :hasBehavioralConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStatus> ,
+                                                                                  <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStructure> ;
+                                                         :hasExpectedOperationalOutcome <https://w3id.org/bito/example/flexible-start#Outcome_S1_ValidPlan> ;
+                                                         :hasExpectedStateTransition <https://w3id.org/bito/example/flexible-start#Transition_S1_PlanAvailable> ;
+                                                         :hasIUT <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> ;
+                                                         :hasInteractingActorSystem <https://w3id.org/bito/example/flexible-start#CCM> ;
+                                                         :hasObservedExecution <https://w3id.org/bito/example/flexible-start#Execution_S1> ;
+                                                         :hasTriggeringInteraction <https://w3id.org/bito/example/flexible-start#Event_S1_PlanObservation> ;
+                                                         :isScenarioOf <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> ;
+                                                         :realizedByUseCaseFunction <https://w3id.org/bito/example/flexible-start#UCF_Plan_With_Power_Sequences> ;
+                                                         :scenarioName "Announcement of plan" ;
+                                                         :scenarioNumber 1 ;
+                                                         rdfs:label "Scenario 1"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Scenario2
 <https://w3id.org/bito/example/flexible-start#Scenario2> rdf:type owl:NamedIndividual ,
-                                                                 :Scenario ;
-                                                        :hasBehavioralConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S2_RequestAccepted> ,
-                                                                                 <https://w3id.org/bito/example/flexible-start#Constraint_S2_RunCompleted> ,
-                                                                                 <https://w3id.org/bito/example/flexible-start#Constraint_S2_StartTimeUpdated> ;
-                                                        :hasExpectedOperationalOutcome <https://w3id.org/bito/example/flexible-start#Outcome_S2_PreferredSequenceShifted> ;
-                                                        :hasExpectedStateTransition <https://w3id.org/bito/example/flexible-start#Transition_S2_PreferredSequenceShifted> ;
-                                                        :hasIUT <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> ;
-                                                        :hasInteractingActorSystem <https://w3id.org/bito/example/flexible-start#CCM> ;
-                                                        :hasObservedExecution <https://w3id.org/bito/example/flexible-start#Execution_S2> ;
-                                                        :hasTriggeringInteraction <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> ;
-                                                        :isScenarioOf <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> ;
-                                                        :realizedByUseCaseFunction <https://w3id.org/bito/example/flexible-start#UCF_Shift_Preferred_Power_Sequence> ;
-                                                        :scenarioName "Shift preferred power sequence" ;
-                                                        :scenarioNumber 2 ;
-                                                        rdfs:label "Scenario 2"@en .
+                                                                  :Scenario ;
+                                                         :hasBehavioralConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S2_RequestAccepted> ,
+                                                                                  <https://w3id.org/bito/example/flexible-start#Constraint_S2_RunCompleted> ,
+                                                                                  <https://w3id.org/bito/example/flexible-start#Constraint_S2_StartTimeUpdated> ;
+                                                         :hasExpectedOperationalOutcome <https://w3id.org/bito/example/flexible-start#Outcome_S2_PreferredSequenceShifted> ;
+                                                         :hasExpectedStateTransition <https://w3id.org/bito/example/flexible-start#Transition_S2_PreferredSequenceShifted> ;
+                                                         :hasIUT <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> ;
+                                                         :hasInteractingActorSystem <https://w3id.org/bito/example/flexible-start#CCM> ;
+                                                         :hasObservedExecution <https://w3id.org/bito/example/flexible-start#Execution_S2> ;
+                                                         :hasTriggeringInteraction <https://w3id.org/bito/example/flexible-start#Event_S2_ShiftRequest> ;
+                                                         :isScenarioOf <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> ;
+                                                         :realizedByUseCaseFunction <https://w3id.org/bito/example/flexible-start#UCF_Shift_Preferred_Power_Sequence> ;
+                                                         :scenarioName "Shift preferred power sequence" ;
+                                                         :scenarioNumber 2 ;
+                                                         rdfs:label "Scenario 2"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Scenario3
 <https://w3id.org/bito/example/flexible-start#Scenario3> rdf:type owl:NamedIndividual ,
-                                                                 :Scenario ;
-                                                        :hasBehavioralConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S3_FormerPreferredInactive> ,
-                                                                                 <https://w3id.org/bito/example/flexible-start#Constraint_S3_RequestAccepted> ,
-                                                                                 <https://w3id.org/bito/example/flexible-start#Constraint_S3_RunCompleted> ,
-                                                                                 <https://w3id.org/bito/example/flexible-start#Constraint_S3_SelectedSequenceScheduled> ;
-                                                        :hasExpectedOperationalOutcome <https://w3id.org/bito/example/flexible-start#Outcome_S3_AlternativeSequenceSelected> ;
-                                                        :hasExpectedStateTransition <https://w3id.org/bito/example/flexible-start#Transition_S3_FormerPreferredInactive> ,
-                                                                                    <https://w3id.org/bito/example/flexible-start#Transition_S3_SelectedSequenceScheduled> ;
-                                                        :hasIUT <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> ;
-                                                        :hasInteractingActorSystem <https://w3id.org/bito/example/flexible-start#CCM> ;
-                                                        :hasObservedExecution <https://w3id.org/bito/example/flexible-start#Execution_S3> ;
-                                                        :hasTriggeringInteraction <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> ;
-                                                        :isScenarioOf <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> ;
-                                                        :realizedByUseCaseFunction <https://w3id.org/bito/example/flexible-start#UCF_Select_Power_Sequence> ;
-                                                        :scenarioName "Select alternative power sequence" ;
-                                                        :scenarioNumber 3 ;
-                                                        rdfs:label "Scenario 3"@en .
+                                                                  :Scenario ;
+                                                         :hasBehavioralConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S3_FormerPreferredInactive> ,
+                                                                                  <https://w3id.org/bito/example/flexible-start#Constraint_S3_RequestAccepted> ,
+                                                                                  <https://w3id.org/bito/example/flexible-start#Constraint_S3_RunCompleted> ,
+                                                                                  <https://w3id.org/bito/example/flexible-start#Constraint_S3_SelectedSequenceScheduled> ;
+                                                         :hasExpectedOperationalOutcome <https://w3id.org/bito/example/flexible-start#Outcome_S3_AlternativeSequenceSelected> ;
+                                                         :hasExpectedStateTransition <https://w3id.org/bito/example/flexible-start#Transition_S3_FormerPreferredInactive> ,
+                                                                                     <https://w3id.org/bito/example/flexible-start#Transition_S3_SelectedSequenceScheduled> ;
+                                                         :hasIUT <https://w3id.org/bito/example/flexible-start#Dishwasher_000000000001> ;
+                                                         :hasInteractingActorSystem <https://w3id.org/bito/example/flexible-start#CCM> ;
+                                                         :hasObservedExecution <https://w3id.org/bito/example/flexible-start#Execution_S3> ;
+                                                         :hasTriggeringInteraction <https://w3id.org/bito/example/flexible-start#Event_S3_SelectRequest> ;
+                                                         :isScenarioOf <https://w3id.org/bito/example/flexible-start#FlexibleStartUseCase> ;
+                                                         :realizedByUseCaseFunction <https://w3id.org/bito/example/flexible-start#UCF_Select_Power_Sequence> ;
+                                                         :scenarioName "Select alternative power sequence" ;
+                                                         :scenarioNumber 3 ;
+                                                         rdfs:label "Scenario 3"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_0
 <https://w3id.org/bito/example/flexible-start#Slot_44_0> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 0 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 0"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 0 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 0"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_1
 <https://w3id.org/bito/example/flexible-start#Slot_44_1> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 1 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 1"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 1 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 1"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_2
 <https://w3id.org/bito/example/flexible-start#Slot_44_2> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 2 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 2"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 2 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 2"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_3
 <https://w3id.org/bito/example/flexible-start#Slot_44_3> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 3 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 3"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 3 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 3"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_4
 <https://w3id.org/bito/example/flexible-start#Slot_44_4> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 4 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 4"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 4 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 4"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_5
 <https://w3id.org/bito/example/flexible-start#Slot_44_5> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 5 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 5"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 5 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 5"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_6
 <https://w3id.org/bito/example/flexible-start#Slot_44_6> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 6 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 6"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 6 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 6"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_7
 <https://w3id.org/bito/example/flexible-start#Slot_44_7> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 7 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 7"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 7 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 7"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_8
 <https://w3id.org/bito/example/flexible-start#Slot_44_8> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 8 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 8"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 8 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 8"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_44_9
 <https://w3id.org/bito/example/flexible-start#Slot_44_9> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 9 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
-                                                        rdfs:label "Slot 44 9"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 9 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT15M"^^xsd:duration ;
+                                                         rdfs:label "Slot 44 9"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_45_0
 <https://w3id.org/bito/example/flexible-start#Slot_45_0> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 0 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT30M"^^xsd:duration ;
-                                                        rdfs:label "Slot 45 0"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 0 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT30M"^^xsd:duration ;
+                                                         rdfs:label "Slot 45 0"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_45_1
 <https://w3id.org/bito/example/flexible-start#Slot_45_1> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 1 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT30M"^^xsd:duration ;
-                                                        rdfs:label "Slot 45 1"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 1 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT30M"^^xsd:duration ;
+                                                         rdfs:label "Slot 45 1"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Slot_45_2
 <https://w3id.org/bito/example/flexible-start#Slot_45_2> rdf:type owl:NamedIndividual ,
-                                                                 <https://saref.etsi.org/saref4ener/Slot> ;
-                                                        <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                        <https://saref.etsi.org/core/hasIdentifier> 2 ;
-                                                        <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT30M"^^xsd:duration ;
-                                                        rdfs:label "Slot 45 2"@en .
+                                                                  <https://saref.etsi.org/saref4ener/Slot> ;
+                                                         <https://saref.etsi.org/saref4ener/belongsTo> <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                         <https://saref.etsi.org/core/hasIdentifier> 2 ;
+                                                         <https://saref.etsi.org/saref4ener/hasDefaultDuration> "PT30M"^^xsd:duration ;
+                                                         rdfs:label "Slot 45 2"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#TraceEvidence_S1
 <https://w3id.org/bito/example/flexible-start#TraceEvidence_S1> rdf:type owl:NamedIndividual ,
-                                                                        :TraceEvidence ;
-                                                               :observedOptionalPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                               :observedPreferredPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                               :evidenceMode "independentScenarioSessions" ;
-                                                               :evidencePreservesInteractionContext "true"^^xsd:boolean ;
-                                                               :evidencePreservesObservedBehavior "true"^^xsd:boolean ;
-                                                               :observedAt "2025-07-15T09:00:00+00:00"^^xsd:dateTime ;
-                                                               :observedPlanStatus "VALID" ;
-                                                               rdfs:label "Scenario 1 trace evidence"@en .
+                                                                         :TraceEvidence ;
+                                                                :observedOptionalPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                :observedPreferredPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                :evidenceMode "independentScenarioSessions" ;
+                                                                :evidencePreservesInteractionContext "true"^^xsd:boolean ;
+                                                                :evidencePreservesObservedBehavior "true"^^xsd:boolean ;
+                                                                :observedAt "2025-07-15T09:00:00+00:00"^^xsd:dateTime ;
+                                                                :observedPlanStatus "VALID" ;
+                                                                rdfs:label "Scenario 1 trace evidence"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#TraceEvidence_S2
 <https://w3id.org/bito/example/flexible-start#TraceEvidence_S2> rdf:type owl:NamedIndividual ,
-                                                                        :TraceEvidence ;
-                                                               :observedScheduledPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                               :evidenceMode "independentScenarioSessions" ;
-                                                               :evidencePreservesInteractionContext "true"^^xsd:boolean ;
-                                                               :evidencePreservesObservedBehavior "true"^^xsd:boolean ;
-                                                               :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
-                                                               :observedExecutionStart "2025-07-15T11:00:20+00:00"^^xsd:dateTime ;
-                                                               :observedPlanUpdatedAt "2025-07-15T09:30:03+00:00"^^xsd:dateTime ;
-                                                               :observedRunStatus "COMPLETED" ;
-                                                               rdfs:label "Scenario 2 trace evidence"@en .
+                                                                         :TraceEvidence ;
+                                                                :observedScheduledPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                :evidenceMode "independentScenarioSessions" ;
+                                                                :evidencePreservesInteractionContext "true"^^xsd:boolean ;
+                                                                :evidencePreservesObservedBehavior "true"^^xsd:boolean ;
+                                                                :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
+                                                                :observedExecutionStart "2025-07-15T11:00:20+00:00"^^xsd:dateTime ;
+                                                                :observedPlanUpdatedAt "2025-07-15T09:30:03+00:00"^^xsd:dateTime ;
+                                                                :observedRunStatus "COMPLETED" ;
+                                                                rdfs:label "Scenario 2 trace evidence"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#TraceEvidence_S3
 <https://w3id.org/bito/example/flexible-start#TraceEvidence_S3> rdf:type owl:NamedIndividual ,
-                                                                        :TraceEvidence ;
-                                                               :observedFormerPreferredPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                               :observedSelectedPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                               :evidenceMode "independentScenarioSessions" ;
-                                                               :evidencePreservesInteractionContext "true"^^xsd:boolean ;
-                                                               :evidencePreservesObservedBehavior "true"^^xsd:boolean ;
-                                                               :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
-                                                               :observedExecutionStart "2025-07-15T12:00:20+00:00"^^xsd:dateTime ;
-                                                               :observedPlanUpdatedAt "2025-07-15T10:45:04+00:00"^^xsd:dateTime ;
-                                                               :observedRunStatus "COMPLETED" ;
-                                                               rdfs:label "Scenario 3 trace evidence"@en .
+                                                                         :TraceEvidence ;
+                                                                :observedFormerPreferredPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                :observedSelectedPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                :evidenceMode "independentScenarioSessions" ;
+                                                                :evidencePreservesInteractionContext "true"^^xsd:boolean ;
+                                                                :evidencePreservesObservedBehavior "true"^^xsd:boolean ;
+                                                                :observedExecutionEnd "2025-07-15T13:29:40+00:00"^^xsd:dateTime ;
+                                                                :observedExecutionStart "2025-07-15T12:00:20+00:00"^^xsd:dateTime ;
+                                                                :observedPlanUpdatedAt "2025-07-15T10:45:04+00:00"^^xsd:dateTime ;
+                                                                :observedRunStatus "COMPLETED" ;
+                                                                rdfs:label "Scenario 3 trace evidence"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Transition_S1_PlanAvailable
 <https://w3id.org/bito/example/flexible-start#Transition_S1_PlanAvailable> rdf:type owl:NamedIndividual ,
-                                                                                   :ExpectedStateTransition ;
-                                                                          :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ,
-                                                                                                    <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                                          :hasSourceState <https://saref.etsi.org/saref4ener/Inactive> ;
-                                                                          :hasTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                          rdfs:label "Plan available transition"@en .
+                                                                                    :ExpectedStateTransition ;
+                                                                           :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ,
+                                                                                                     <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                           :hasSourceState <https://saref.etsi.org/saref4ener/Inactive> ;
+                                                                           :hasTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                           rdfs:label "Plan available transition"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Transition_S2_PreferredSequenceShifted
 <https://w3id.org/bito/example/flexible-start#Transition_S2_PreferredSequenceShifted> rdf:type owl:NamedIndividual ,
-                                                                                              :ExpectedStateTransition ;
-                                                                                     :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                                                     :hasSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                     :hasTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                     rdfs:label "Preferred sequence shifted transition"@en .
+                                                                                               :ExpectedStateTransition ;
+                                                                                      :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                                      :hasSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                      :hasTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                      rdfs:label "Preferred sequence shifted transition"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Transition_S3_FormerPreferredInactive
 <https://w3id.org/bito/example/flexible-start#Transition_S3_FormerPreferredInactive> rdf:type owl:NamedIndividual ,
-                                                                                             :ExpectedStateTransition ;
-                                                                                    :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
-                                                                                    :hasSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                    :hasTargetState <https://saref.etsi.org/saref4ener/Inactive> ;
-                                                                                    rdfs:label "Former preferred sequence inactive transition"@en .
+                                                                                              :ExpectedStateTransition ;
+                                                                                     :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_44> ;
+                                                                                     :hasSourceState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                     :hasTargetState <https://saref.etsi.org/saref4ener/Inactive> ;
+                                                                                     rdfs:label "Former preferred sequence inactive transition"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#Transition_S3_SelectedSequenceScheduled
 <https://w3id.org/bito/example/flexible-start#Transition_S3_SelectedSequenceScheduled> rdf:type owl:NamedIndividual ,
-                                                                                               :ExpectedStateTransition ;
-                                                                                      :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
-                                                                                      :hasSourceState <https://saref.etsi.org/saref4ener/Inactive> ;
-                                                                                      :hasTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
-                                                                                      rdfs:label "Selected sequence scheduled transition"@en .
+                                                                                                :ExpectedStateTransition ;
+                                                                                       :hasRelevantPowerSequence <https://w3id.org/bito/example/flexible-start#PowerSequence_45> ;
+                                                                                       :hasSourceState <https://saref.etsi.org/saref4ener/Inactive> ;
+                                                                                       :hasTargetState <https://saref.etsi.org/saref4ener/Scheduled> ;
+                                                                                       rdfs:label "Selected sequence scheduled transition"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#UCF_Plan_With_Power_Sequences
 <https://w3id.org/bito/example/flexible-start#UCF_Plan_With_Power_Sequences> rdf:type owl:NamedIndividual ,
-                                                                                     :UseCaseFunction ;
-                                                                            :ucfName "UCF_Plan_With_Power_Sequences" ;
-                                                                            rdfs:label "UCF Plan With Power Sequences"@en .
+                                                                                      :UseCaseFunction ;
+                                                                             :ucfName "UCF_Plan_With_Power_Sequences" ;
+                                                                             rdfs:label "UCF Plan With Power Sequences"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#UCF_Select_Power_Sequence
 <https://w3id.org/bito/example/flexible-start#UCF_Select_Power_Sequence> rdf:type owl:NamedIndividual ,
-                                                                                 :UseCaseFunction ;
-                                                                        :ucfName "UCF_Select_Power_Sequence" ;
-                                                                        rdfs:label "UCF Select Power Sequence"@en .
+                                                                                  :UseCaseFunction ;
+                                                                         :ucfName "UCF_Select_Power_Sequence" ;
+                                                                         rdfs:label "UCF Select Power Sequence"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#UCF_Shift_Preferred_Power_Sequence
 <https://w3id.org/bito/example/flexible-start#UCF_Shift_Preferred_Power_Sequence> rdf:type owl:NamedIndividual ,
-                                                                                          :UseCaseFunction ;
-                                                                                 :ucfName "UCF_Shift_Preferred_Power_Sequence" ;
-                                                                                 rdfs:label "UCF Shift Preferred Power Sequence"@en .
+                                                                                           :UseCaseFunction ;
+                                                                                  :ucfName "UCF_Shift_Preferred_Power_Sequence" ;
+                                                                                  rdfs:label "UCF Shift Preferred Power Sequence"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#ValidationResult_S1
 <https://w3id.org/bito/example/flexible-start#ValidationResult_S1> rdf:type owl:NamedIndividual ,
-                                                                           :ValidationResult ;
-                                                                  :basedOnTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S1> ;
-                                                                  :hasVerdict :PASS ;
-                                                                  :validatesConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStatus> ,
-                                                                                       <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStructure> ;
-                                                                  :achievesExpectedOutcome "true"^^xsd:boolean ;
-                                                                  :satisfiesConstraint "true"^^xsd:boolean ;
-                                                                  :validationMessage "Scenario 1 evidence represents a valid announced plan." ;
-                                                                  rdfs:label "Scenario 1 validation result"@en .
+                                                                            :ValidationResult ;
+                                                                   :basedOnTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S1> ;
+                                                                   :hasVerdict :PASS ;
+                                                                   :validatesConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStatus> ,
+                                                                                        <https://w3id.org/bito/example/flexible-start#Constraint_S1_PlanStructure> ;
+                                                                   :achievesExpectedOutcome "true"^^xsd:boolean ;
+                                                                   :satisfiesConstraint "true"^^xsd:boolean ;
+                                                                   :validationMessage "Scenario 1 evidence represents a valid announced plan." ;
+                                                                   rdfs:label "Scenario 1 validation result"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#ValidationResult_S2
 <https://w3id.org/bito/example/flexible-start#ValidationResult_S2> rdf:type owl:NamedIndividual ,
-                                                                           :ValidationResult ;
-                                                                  :basedOnTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S2> ;
-                                                                  :hasVerdict :PASS ;
-                                                                  :validatesConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S2_RequestAccepted> ,
-                                                                                       <https://w3id.org/bito/example/flexible-start#Constraint_S2_RunCompleted> ,
-                                                                                       <https://w3id.org/bito/example/flexible-start#Constraint_S2_StartTimeUpdated> ;
-                                                                  :achievesExpectedOutcome "true"^^xsd:boolean ;
-                                                                  :satisfiesConstraint "true"^^xsd:boolean ;
-                                                                  :validationMessage "Scenario 2 evidence represents an accepted preferred-sequence shift and completed execution." ;
-                                                                  rdfs:label "Scenario 2 validation result"@en .
+                                                                            :ValidationResult ;
+                                                                   :basedOnTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S2> ;
+                                                                   :hasVerdict :PASS ;
+                                                                   :validatesConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S2_RequestAccepted> ,
+                                                                                        <https://w3id.org/bito/example/flexible-start#Constraint_S2_RunCompleted> ,
+                                                                                        <https://w3id.org/bito/example/flexible-start#Constraint_S2_StartTimeUpdated> ;
+                                                                   :achievesExpectedOutcome "true"^^xsd:boolean ;
+                                                                   :satisfiesConstraint "true"^^xsd:boolean ;
+                                                                   :validationMessage "Scenario 2 evidence represents an accepted preferred-sequence shift and completed execution." ;
+                                                                   rdfs:label "Scenario 2 validation result"@en .
 
 
 ###  https://w3id.org/bito/example/flexible-start#ValidationResult_S3
 <https://w3id.org/bito/example/flexible-start#ValidationResult_S3> rdf:type owl:NamedIndividual ,
-                                                                           :ValidationResult ;
-                                                                  :basedOnTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S3> ;
-                                                                  :hasVerdict :PASS ;
-                                                                  :validatesConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S3_FormerPreferredInactive> ,
-                                                                                       <https://w3id.org/bito/example/flexible-start#Constraint_S3_RequestAccepted> ,
-                                                                                       <https://w3id.org/bito/example/flexible-start#Constraint_S3_RunCompleted> ,
-                                                                                       <https://w3id.org/bito/example/flexible-start#Constraint_S3_SelectedSequenceScheduled> ;
-                                                                  :achievesExpectedOutcome "true"^^xsd:boolean ;
-                                                                  :satisfiesConstraint "true"^^xsd:boolean ;
-                                                                  :validationMessage "Scenario 3 evidence represents an accepted alternative-sequence selection and completed execution." ;
-                                                                  rdfs:label "Scenario 3 validation result"@en .
+                                                                            :ValidationResult ;
+                                                                   :basedOnTraceEvidence <https://w3id.org/bito/example/flexible-start#TraceEvidence_S3> ;
+                                                                   :hasVerdict :PASS ;
+                                                                   :validatesConstraint <https://w3id.org/bito/example/flexible-start#Constraint_S3_FormerPreferredInactive> ,
+                                                                                        <https://w3id.org/bito/example/flexible-start#Constraint_S3_RequestAccepted> ,
+                                                                                        <https://w3id.org/bito/example/flexible-start#Constraint_S3_RunCompleted> ,
+                                                                                        <https://w3id.org/bito/example/flexible-start#Constraint_S3_SelectedSequenceScheduled> ;
+                                                                   :achievesExpectedOutcome "true"^^xsd:boolean ;
+                                                                   :satisfiesConstraint "true"^^xsd:boolean ;
+                                                                   :validationMessage "Scenario 3 evidence represents an accepted alternative-sequence selection and completed execution." ;
+                                                                   rdfs:label "Scenario 3 validation result"@en .
 
 
 #################################################################
